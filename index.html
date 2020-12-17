@@ -6,121 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PIT</title>
     <!-- stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   </head>
   <body class="sans-serif">
-    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+
+    <!-- navigation -->
+    <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l z-999">
       <nav class="f6 fw6 ttu tracked">
-        <a class="link dim white dib mr3" href="#" title="Home">Home</a>
+        <a class="link dim white dib mr3" href="#home" title="Home">Home</a>
         <a class="link dim white dib mr3" href="#" title="About">About</a>
         <a class="link dim white dib mr3" href="#" title="Store">Store</a>
         <a class="link dim white dib" href="#" title="Contact">Contact</a>
       </nav>
     </header>
-    <article class="helvetica pb5">
+
+    <!-- jumbotron -->
+    <article id="home" class="helvetica pb5">
       <header class="vh-100 bg-light-pink dt w-100">
         <div 
-          style="background:url(http://mrmrs.github.io/photos/display.jpg) no-repeat center right;background-size: cover;" 
+          style="background: url(./assets/images/cover.gif) no-repeat center right;background-size: cover;" 
           class="dtc v-mid cover ph3 ph4-m ph5-l">
-          <h1 class="f2 f-subheadline-l measure lh-title fw9">A Night Taking Photos at San Francisco’s Spooky Ruins of the Sutro Baths</h1>
-          <h2 class="f6 fw6 black">A story by Nancy Drew</h2>
+          <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0 w-70">
+            <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+              <strong>Multi-Log:</strong><br>
+              Refining Equal Access to Queen’s Public Library
+            </span>
+          </h3>
         </div>
       </header>
+
+      <!-- team introduction -->
+      <section class="ph4 ph5-m ph6-l">
+        <div class="pv5 f4 f2-ns measure center">
+          <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir">Meet the Team</h1>
+          <p class="db lh-copy black-70 serif fw1 mv0 f4 f3-m f2-l measure baskerville pb3">
+            An interdisciplinary group of students from Columbia University that harnesses the skill sets from Architecture, Urban Planning, Computer Science, and Journalism in hopes of responding to the possible contributions and detriments technology and digital world has, and will, offer to our society. 
+          </p>
+          <div class="cf">
+            <div class="fl w-20 w-100-m tc pv5 pa">
+              <div class="tc w-100">
+                <img src="./assets/images/profile-aruna.JPG" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+                <h1 class="f3 mb2">Aruna A. Das</h1>
+                <h2 class="f5 fw4 gray mt0">MSAUD - GSAPP</h2>
+              </div>
+            </div>
+            <div class="fl w-20 w-100-m tc pv5 pa">
+              <div class="tc">
+                <img src="./assets/images/profile-julio.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+                <h1 class="f3 mb2">Julio Gomez</h1>
+                <h2 class="f5 fw4 gray mt0">Computer Science - CC</h2>
+              </div>
+            </div>
+            <div class="fl w-20 w-100-m tc pv5 pa">
+              <div class="tc">
+                <img src="./assets/images/profile-scarlet.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+                <h1 class="f3 mb2">Scarlet Tong</h1>
+                <h2 class="f5 fw4 gray mt0">MSAUD - GSAPP</h2>
+              </div>
+            </div>
+            <div class="fl w-20 w-100-m tc pv5 pa">
+              <div class="tc">
+                <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+                <h1 class="f3 mb2">Xabier Peralta</h1>
+                <h2 class="f5 fw4 gray mt0">Computer Science - CC</h2>
+              </div>
+            </div>
+            <div class="fl w-20 w-100-m tc pv5 pa">
+              <div class="tc">
+                <img src="./assets/images/profile-jean.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
+                <h1 class="f3 mb2">Jean Kim</h1>
+                <h2 class="f5 fw4 gray mt0">Architecture - GSAPP</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div class="serif ph3 ph4-m ph5-l">
-        <p class="lh-copy f5 f3-m f1-l measure center pv4">
-          On <time>March 14, 1896</time>, the Sutro Baths were opened to the public as the world's largest indoor swimming pool establishment. </p>
         <div class="f5 f3-m lh-copy">
-          <div class="cf dt-l w-100 bt bb b--black-10 pv4">
-            <div class="dtc-l v-mid mw6 pr3-l">
-              <img class="w-100" src="http://mrmrs.github.io/photos/009.jpg" alt=""/>
+          <div class="cf dt-l w-100 bt b--black-10 pv4">
+            <div class="dtc-l v-mid mw6 pr4-l">
+              <img class="w-100" src="https://www.queenslibrary.org/sites/default/files/2019-04/QPL_Logo_RGB_PURPLE_Centered_2.jpg" alt=""/>
             </div>
             <div class="dtc-l v-mid f6 f5-m f4-l measure-l">
               <p class="measure pv4-l center">
                 <span class="fw9 fw4-ns">
-                Before it burned to the ground, the structure</span> filled a small beach
-                inlet below the Cliff House, also owned by Adolph Sutro at the time.
-                Shortly after closing, a fire in 1966 destroyed the building
-                while it was in the process of being demolished. All that remains
-                of the site are concrete walls, blocked off stairs and
-                passageways, and a tunnel with a deep crevice in the middle. The
-                cause of the fire was arson. Shortly afterwards, the developer
-                left San Francisco and claimed insurance money.
-              </p>
-            </div>
-          </div>
-          <div class="cf dn">
-            <div class="fl w-100 w-50-l">
-              <p class="f5 pv4">
-                During high tides, water would flow directly into the pools from the
-                nearby ocean, recycling the <span class="db f4 f3-m f1-l fw6 measure lh-title">two million US gallons of water in about an hour. </span>
-              </p>
-            </div>
-            <div class="fl w-100 w-50-l">
-              <p class="f5">
-                During low tides, a powerful turbine water pump,
-                built inside a cave at sea level, could be switched on from a control
-                room and could fill the tanks at a rate of 6,000 US gallons a minute,
-                recycling all the water in five hours.
+                  <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir w-100">Our Goal</h1>
+                  A progressive web application that is designed to decentralize</span> the prevalence of English as the default language for most website development. Given a large population of the Queen’s Public Library (OPL) patrons do not speak English very well and are often bilingual or multilingual, Multi-log treats all languages equally by curating content based on the user's language preference. The goal is to ensure the user experience for all is maintained regardless of the user’s known language, enabling non-English speakers (especially immigrants) to fully utilize QPL’s services.
               </p>
             </div>
           </div>
         </div>
       </div>
+
     </article>
-    <section class="ph4 ph5-m ph6-l">
-      <div class="pv5 f4 f2-ns measure center">
-        <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir">Meet the Team</h1>
-        <p class="db lh-copy black-70 serif fw1 mv0 f4 f3-m f2-l measure baskerville pb3">
-          A short description of your project. Maybe a few notes concerning your
-          constraints and process.  Standard lorem ipsum dolor sit amet, consectetur adipisicing
-          elit, sed do eiusmod tempor incididunt ut labore etc. al dolore magna
-          aliqua. Ut enim ad.
-        </p>
-        <div class="cf">
-          <div class="fl w-100 w-20-ns tc pv5 pa">
-            <div class="tc w-100">
-              <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-              <h1 class="f3 mb2">Aruna A. Das</h1>
-              <h2 class="f5 fw4 gray mt0">MSAUD - GSAPP</h2>
-            </div>
-          </div>
-          <div class="fl w-100 w-20-ns tc pv5 pa">
-            <div class="tc">
-              <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-              <h1 class="f3 mb2">Julio Gomez</h1>
-              <h2 class="f5 fw4 gray mt0">Computer Science - CC</h2>
-            </div>
-          </div>
-          <div class="fl w-100 w-20-ns tc pv5 pa">
-            <div class="tc">
-              <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-              <h1 class="f3 mb2">Scarlet Tong</h1>
-              <h2 class="f5 fw4 gray mt0">MSAUD - GSAPP</h2>
-            </div>
-          </div>
-          <div class="fl w-100 w-20-ns tc pv5 pa">
-            <div class="tc">
-              <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-              <h1 class="f3 mb2">Xabier Peralta</h1>
-              <h2 class="f5 fw4 gray mt0">Computer Science - CC</h2>
-            </div>
-          </div>
-          <div class="fl w-100 w-20-ns tc pv5 pa">
-            <div class="tc">
-              <img src="http://tachyons.io/img/avatar_1.jpg" class="br-100 h4 w4 dib ba b--black-05 pa2" title="Photo of a kitty staring at you">
-              <h1 class="f3 mb2">Jean Kim</h1>
-              <h2 class="f5 fw4 gray mt0">Architecture - GSAPP</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    
+
+    <!-- the process -->
     <article data-name="article-full-bleed-background">
-      <div class="cf" style="background: url(http://mrmrs.github.io/photos/12.jpg) no-repeat center center fixed; background-size: cover;">
+      <div class="cf" style="background: url(https://miro.medium.com/max/2496/1*BQW81762XuwHuIeENO2eOg.png) no-repeat center center fixed; background-size: cover;">
         <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3 times">
           <header class="bb b--black-70 pv4">
             <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3 avenir">The Process</h3>
-            <h4 class="f3 fw4 i lh-title mt0">Siem Reap, Cambodia</h4>
+            <h4 class="f3 fw4 i lh-title mt0">PIT + DDD</h4>
           </header>
           <section class="pt5 pb4">
             <p class="times lh-copy measure f4 mt0">
@@ -130,85 +120,190 @@
         </div>
       </div>
     </article>
-    <main class="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l mw9 center">
-      <div class="fl w-50 pr2 pr3-l mb3 mb4-l">
-        <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/v/022.jpg) center;"></div>
-      </div>
-      <div class="fl w-50 w-25-l pl2 pr2-m ph2-l mb3 mb4-l">
-        <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/v/024.jpg) center;"> </div>
-      </div>
-      <div class="fl w-50 w-50 w-25-l pr2 pr0-l pl3-l mb3 mb4-l">
-          <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/050.jpg) left;"> </div>
-        </div>
-      <div class="fl w-50 w-50 w-25-l pl2 pl0-l pr2-m pr4-l mb3 mb4-l">
-        <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/049.jpg) center;"> </div>
-      </div>
-      <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline">
-        <div class="pa4">
-          <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">#004</h1>
-          <p class="lh-copy mt2 mt3-m mt5-l f6">
-            <span class="db-ns f6 fw7 lh-solid mb3 mb0-m mb4-l">Mies, my great mentor said:</span> 
-            <span class="fw9 f6 f1-l db lh-title mb3 mb4-l">“God is in the details.”</span>
-            <span class="db-l measure-wide">
-            That is the essence of syntax: the discipline
-            that controls the proper use of grammar in the construction of phrases and the articulation of a language, Design. The syntax of design is provided by many components in the nature of the project.
-          </span>
+
+    <!-- research (intro) -->
+    <article class="cf pa3 mw9 center">
+      <header class="fl w-100 w-50-l ph3-m ph4-l mb1 mb2-l">
+        <h2 class="lh-title f1 b mt1">
+          Research
+        </h2>
+      </header>
+      <section class="fl w-100">
+        <div class="fl w-50-l ph3-m ph4-l pt3">
+          <p class="f6 lh-copy measure">
+            Queens Borough in New York City has been celebrated as the most linguistically diverse place on Earth. However the high level of diversity also places a problem for the city to fully integrate non-English speakers when English is still the dominant language used both on a legal and governmental level, as well as, throughout society. To understand the context which QPL operates in, the team conducted research in the following areas:
           </p>
         </div>
-      </div>
-      <div class="cf">
-        <div class="fl w-100 w-25-l pl3-l mb3 mb4-l">
-            <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/051.jpg) center;"> </div>
+        <div class="fl w-50-l ph3-m ph4-l">
+          <p class="f6 lh-copy measure">
+            <ul class="list fw2 pl0 measure black">
+              <li class="lh-copy pb2 ba bl-0 bt-0 br-0 b--dotted b--black-30">spatial analysis on language proficiency distribution in Queens</li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">5 interviews with Second generation immigrant</li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">2 interviews with First generation immigrant</li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">6 interviews with librarians </li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">3 personas ( one for each target user )</li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">3 user journeys</li>
+              <li class="lh-copy pv2 ba bl-0 bt-0 br-0 b--dotted b--black-30">compared language and translation programs amongst branches</li>
+            </ul>
+          </p>
         </div>
-        <div class="fl w-100 w-25-l pr3-l">
-          <p class="lh-copy measure f6 pt3 pt0-l mt0 mb3 mb4-l center">
-            <span class="fw6">For us Graphic Design is “organization of information.”</span> There are other
-            types of graphic design more concerned with illustration or of a
-            narrative nature.  Nothing could be more useful to reach our intention
-            than the Grid. The grid represents the basic structure of our graphic
-            design, it helps to organize the content, it provides consistency, it
-            gives an orderly look and it projects a level of intellectual elegance
-            that we like to express.  There are in nite kinds of grids, but just
-            one - the most appropriate - for any problem. Therefore, it becomes
-            important to know which kind of grid is the most appropriate. The basic
-            understanding is that the smaller the module of the grid the least
-            helpful it could be. We could say that an empty page is a page with an
-            in nitesimal small grid. Therefore, it is equivalent to not being
-            there. Conversely a page with a coarse grid is a very restricting grid
-            offering too few alternatives. The secret is to  nd the proper kind of
-            grid for the job at hand. Sometimes, in designing a grid we want to
-            have the outside margins small enough to provide a certain tension
-            between the edges of the page and the content. After that we divide the
-            page in a certain number of columns according to the content, three,
-            two, four,  ve, six, etc. Columns provide only one kind of consistency,
-            but we also need to have an horizontal frame of reference to assure
-            certain levels of continuity throughout the publication. Therefore, we
-            will divide the page from top to bottom in a certain number of Modules,
-            four, six, eight, or more, according to size and need. Once we have
-            structured the page, we will begin to structure the information and
-            place it in the grid in such a way that the clarity of the message will
-            be enhanced by the placement of the text on the grid. There are in nite
-            ways of doing this and that is why the grid is a useful tool, rather
-            than a constricting device. 
+        <div class="fl w-100 ph3-m ph4-l">
+          <div class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url(https://www.queenslibrary.org/sites/default/files/Landing_page_images/AboutUs_LandingPage/PNG/AboutUs_DefaultImage.png) no-repeat center; height: 400px;"></div>
+        </div>
+      </section>
+    </article>
+
+    <article class="bg-white">
+
+      <div class="ph4 ph5-m ph6-l">
+        <div class="pv5 f4 f2-ns measure center">
+          <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir">Mapping</h1>
+          <p class="db lh-copy black-70 serif fw1 mv0 f4 f3-m f2-l measure baskerville">
+            Through the maps below, the team was able to understand that the QPL network is well situated within the spatial distribution of languages and English fluency of residents in Queens that needs the most help (namely the northern half of the borough). 
           </p>
         </div>
 
-        <div class="fl w-100 w-75-l pv0 mv0">
-          <div class="fl w-100 mb2 mb4-l">
-            <div class="cover pv5 pv6-l" style="background:black url(http://mrmrs.github.io/photos/u/001.jpg) center;"> </div>
+        <div class="cf mw8 center">
+          <div class='fl w-33 w-50-m w-33-l pr2 pr2-l'>
+            <div class="pv6 cover bg-center" style="background: url(./assets/images/qns-map-one.jpg);"></div>
           </div>
-          <div class="fl w-25 mb2 mb4-l">
-            <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/u/002.jpg) center;"> </div>
+          <div class='fl w-33 w-50-m w-33-l ph3 pr0-m ph3-l'>
+            <div class="pv6 cover bg-center" style="background-image: url(./assets/images/qns-map-two.jpg);"></div>
           </div>
-          <div class="fl w-75 pl2 pl4-l mb2 mb4-l">
-            <div class="cover pv5 pv6-m pv7-l" style="background:black url(http://mrmrs.github.io/photos/u/003.jpg) center;"> </div>
-          </div>
-          <div class="fl w-100 mb2 mb4-l">
-              <div class="cover pv5 pv6-ns" style="background:black url(http://mrmrs.github.io/photos/u/004.jpg) center;"> </div>
+          <div class='fl w-33 w-100-m w-33-l pl2 pl0-m pl2-l mt4-m'>
+            <div class="pv6 cover bg-center" style="background-image: url(./assets/images/qns-map-three.jpg);"></div>
           </div>
         </div>
+
+        <div class="measure f3 center mv5 black-70">
+          <h1 class="fw6 f3 avenir">Digging Deeper</h1>
+          <p class="lh-copy measure f4 f3-ns black-70 baskerville">
+            On the bases of QPL and immigrants being most heavily impacted by language barriers, the team began conducting interviews with branch librarians, first and second generation immigrants who live in Queens.
+          </p>
+
+          <div class="pa4">
+            <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+              <p class="f5 f4-m f3-l lh-copy measure mt0">
+                Many of our users are not proficient in English and we are often asked if we are able to translate.
+              </p>
+              <cite class="f6 ttu tracked fs-normal">―Gene, QPL Librarian</cite>
+            </blockquote>
+          </div>
+
+          <div class="pa4">
+            <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+              <p class="f5 f4-m f3-l lh-copy measure mt0">
+                We do not provide translation/interpretation services on a regular basis but we often use staff members' language skills to communicate with customers.
+              </p>
+              <cite class="f6 ttu tracked fs-normal">―Alfredo, QPL Librarian</cite>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="measure f4 f3-ns center mv5 black-70">
+          <p class="lh-copy measure f3 black-70 baskerville">
+            Talking to branch librarians helped us validate that QPL is a valuable resource for immigrants or new citizens, and there is a need for translation services at the library and librarians are not well equipped or trained to offer translation. 
+          </p>
+          <p class="lh-copy measure f3 black-70 baskerville">
+            Interviews with first and second generation immigrants helped identify language barriers they faced while entering the country. Joseph, a first generation immigrant, acted as a translator for his parents when they first moved over. Despite not knowing English himself, there is a crucial demand for him to pick up the language in a short period of time. Below is a collection of  personas we developed through a summary from speaking to second generation immigrants, coupled with user journeys that illustrate a common pain point for them.
+          </p>
+          <div id="carouselExampleControls" class="carousel carousel-dark slide pv2" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 600px;">
+              <div class="carousel-item">
+                <img src="./assets/images/persona1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/userJourney1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/persona2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item active">
+                <img src="./assets/images/userJourney2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/persona3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/images/userJourney3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          <p class="lh-copy measure f3 black-70 baskerville">
+            Through literature research, the team also found Local Law 30 and Executive Order 120 that requires city agencies to provide translation services for 10 top spoken languages or 170 languages respectively.
+          </p>
+          <div class="pa4">
+            <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+              <p class="f5 f4-m f3-l lh-copy measure mt0">
+                Local Law 30 (LL 30) is the City’s language access law which improves access to City services for all individuals. ‎LL 30 requires covered agencies to appoint language access coordinators, translate commonly distributed documents into 10 designated languages, provide telephonic interpretation in at least 100 languages, and develop and implement language access implementation plans, among other requirements.
+              </p>
+              <cite class="f6 ttu tracked fs-normal">―NYC Mayor's Office Of Immigrant Affairs</cite>
+            </blockquote>
+          </div>
+          <div class="pa4">
+            <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
+              <p class="f5 f4-m f3-l lh-copy measure mt0">
+                Executive Order 120 requires that all City agencies that provide services to the public create a language access plan to ensure that those that do not speak English can still access city services.
+              </p>
+              <cite class="f6 ttu tracked fs-normal">―NYC Mayor's Office Of Immigrant Affairs</cite>
+            </blockquote>
+          </div>
+          <p class="lh-copy measure f3 black-70 baskerville">
+            The team wanted to utilize these policies as an opportunity as a critical leverage point to push translation services and more comprehensive language support for the QPL system to address a gap in implementation to fulfill those policies, since we believe that public libraries are key city and civic agency that is meant to serve the general public. 
+          </p>
+        </div>
       </div>
-  </main>
+    </article>
+
+    <article>
+      <header class="bg-gold sans-serif">
+        <div class="mw9 center pa4 pt5-ns ph7-l">
+          <time class="f6 mb2 dib ttu tracked pl5-l"><small>things were going well</small></time>
+          <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0 pl5-l">
+            <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+              However...
+            </span>
+          </h3>
+        </div>
+      </header>
+      <div class="pa4 ph7-l georgia mw9-l center">
+        <div class="pl5-l">
+          <p class="f5 f3-ns lh-copy measure georgia">
+            Upon talking to Nick Buron, the Chief Librarian, and Denise Corcoran, Director of Central Library Services, we realize the QPL do not identify themselves as a city agency, but do share close ties with the city departments. In terms of translation services, the library has pioneered the adoption of using Travis translation devices and subscription to the Language Line as main programs to tackle the language barrier to communicate and support their non-English speaking patrons before LL30 or EE120 was issued. With our base assumptions being proven wrong, the team went back to the drafting board to shift our design focus, looking at ways to better promote and improve upon QPL programs and services offered for the immigrant community. 
+          </p>
+          <p class="f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb4">
+            <img src="./assets/images/shift1.png" />
+          </p>
+          <p class="f6 f5-ns lh-copy measure i pl4 bl bw1 b--gold mb2">
+            <img src="./assets/images/shift2.png" />
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <section class="mw5 mw9-ns center bg-light-gray pa3 ph5-ns text-center">
+      <h1 class="mt0 fw6 f1 center">Synthesis</h1>
+      <p class="center fw3 lh-copy measure">
+        The team categorized findings under each of the three target user groups: first generation immigrant, second generation immigrant and librarians. Personas and user journeys are updated to capture and illustrate the hopes, concerns and frustrations of each of our target groups. Each persona is coupled with quotes from interviews and a curated user journey.
+      </p>
+      <p class="center fw4 lh-copy measure">
+        Together they inform our How Might We (HMW) questions.
+      </p>
+      <p class="center fw3 lh-copy measure">
+        At this stage, the team had one How Might We for each target group, but we also acknowledge that those HMW questions often overlap and are relevant across multiple user groups. 
+      </p>
+    </section>
+    
+
+    <!-- footer -->
     <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">
       <a href="mailto:" class="link b f3 f2-ns dim black-70 lh-solid">hello@email.com</a>
       <p class="f6 db b ttu lh-solid">© 2016 COMPANY Inc.</p>
@@ -218,5 +313,6 @@
         <a href="/privacy/"  title="Privacy" class="f6 dib pl2 mid-gray dim">Privacy</a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
 </html>
