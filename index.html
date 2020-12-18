@@ -15,9 +15,10 @@
     <header class="bg-black-90 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l z-999">
       <nav class="f6 fw6 ttu tracked">
         <a class="link dim white dib mr3" href="#home" title="Home">Home</a>
-        <a class="link dim white dib mr3" href="#" title="About">About</a>
-        <a class="link dim white dib mr3" href="#" title="Store">Store</a>
-        <a class="link dim white dib" href="#" title="Contact">Contact</a>
+        <a class="link dim white dib mr3" href="#ideate" title="About">Ideate</a>
+        <a class="link dim white dib mr3" href="#proto" title="Store">Prototype</a>
+        <a class="link dim white dib mr3" href="#test" title="Store">Test</a>
+        <a class="link dim white dib" href="#result" title="Contact">Result</a>
       </nav>
     </header>
 
@@ -424,7 +425,7 @@
       </header>
     </article>
 
-    <article class="bg-white">
+    <article id="ideate" class="bg-white">
       <div class="ph4 ph5-m ph7-l">
         <div class="pt3 pb2 f4 f2-ns measure center">
           <h1 class="fw6 f1 fl w-100 black-70 mt0 mb3 avenir">Ideation</h1>
@@ -483,7 +484,7 @@
       </div>
     </article>
 
-    <article class="bg-white pt1">
+    <article id="proto" class="bg-white pt1">
       <div class="ph4 ph5-m ph6-l">
         <div class="pv5 f4 f2-ns measure center">
           <header class="tc ph4 pb2">
@@ -543,7 +544,7 @@
             </div>
           </p>
           <p class="lh-copy measure f4 f3-ns black-70 baskerville">
-            As a team, we envisioned the library app not only as an extension of the digital library services and catalog, but also potentially as a mediator between the digital and the physical library space. The integration of maps and geolocated alerts began to layout a series of information that would enable patrons to learn more about what the library has to offer and motivate them to visit. The design of the initial language selection is important as it sets the default language for the whole application once the user is within the app. Specific language contents are included such as “language support” for each library branch on the map, and most popular books are reflective of the user’s language preferences. These key functions will aid both the librarians and patrons alike to better serve and utilize the library resources respectively. 
+            As a team, we envisioned the library app not only as an extension of the digital library services and catalog, but also potentially as a mediator between the digital and the physical library space. The integration of maps and geolocated alerts began to layout a series of information that would enable patrons to learn more about what the library has to offer and motivate them to visit. The design of the initial language selection is important as it sets the default language for the whole application once the user is within the app. Specific language contents are included such as "language support" for each library branch on the map, and most popular books are reflective of the user’s language preferences. These key functions will aid both the librarians and patrons alike to better serve and utilize the library resources respectively. 
           </p>
         </div>
         <div class="measure f3 center mt2 mb5 black-70">
@@ -571,7 +572,7 @@
       </div>
     </article>
 
-    <article class="baskerville pb5">
+    <article id="test" class="baskerville pb5">
       <header class="avenir tc-l ph3 ph4-ns pt4 pt5-ns">
         <h1 class="f3 f2-m f-subheadline-l measure lh-title fw3 mt0">Testing</h1>
       </header>
@@ -644,6 +645,52 @@
       </div>
     </article>
 
+    <article id="result" class="cf ph3 ph5-ns pv3">
+      <div class="row">
+      <header class="col-sm-12 col-md-6 pr4-ns">
+        <h1 class="f2 lh-title f-headline-l fw9 mb3 mt0 pt3 bt bw2">
+          Results
+        </h1>
+        <h2 class="f3 mid-gray lh-title">
+          <div class="aspect-ratio aspect-ratio--16x9 mv5">
+            <iframe src="./assets/images/copy-1080.mp4" class="aspect-ratio--object" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </h2>
+      </header>
+      <div class="col-md-6">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/images/userKa.png" class="h5" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">"I can <mark>finally find book recommendations</mark> for my native language to learn and practice it."
+                </p>
+               <p class="card-text"><small class="text-muted">Alex (2nd gen. immigrant)</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="assets/images/userAlex.png" class="h5" alt="dog">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text">"It’s great to get a sense of <mark> many books in your language they have at the library."</mark>
+                </p>
+               <p class="card-text"><small class="text-muted">Ka Tak (1st gen. immigrant)</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
     <!-- reflections -->
     <article class="cf ph3 ph5-ns pt3 pb5">
       <header class="fn fl-ns w-50-ns pr4-ns">
@@ -677,14 +724,8 @@
     </section>
 
     <!-- footer -->
-    <footer class="ph3 ph4-ns pv6 bt b--black-10 black-70">
-      <a href="mailto:" class="link b f3 f2-ns dim black-70 lh-solid">hello@email.com</a>
-      <p class="f6 db b ttu lh-solid">© 2016 COMPANY Inc.</p>
-      <div class="mt5">
-        <a href="/language/" title="Language" class="f6 dib pr2 mid-gray dim">Language</a>
-        <a href="/terms/"    title="Terms" class="f6 dib ph2 mid-gray dim">Terms of Use</a>
-        <a href="/privacy/"  title="Privacy" class="f6 dib pl2 mid-gray dim">Privacy</a>
-      </div>
+    <footer class="ph3 ph4-ns pt4 pb3 bt b--black-10 black-70">
+      <p class="f6 db b ttu lh-solid">© 2020 MUTLI LOG</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
   </body>
